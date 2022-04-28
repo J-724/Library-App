@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    /* outline: 1px solid blue; */
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max(15%, 200px) auto;
+    grid-template-areas: 
+        "header"
+        "main";
+    min-height: 100vh;        
+}
+
+.header{
+    background-color: #474747;
+    grid-area: header;
+}
+
+.main{
+    background-color: #e0e0ce;
+    position: relative;
+    grid-area: main;
+    padding: 10px;
+}
+
+    .books-area{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 15px;
+    }
+
+    .book-display,
+    .form-newBook{
+        border-radius: 8px;
+        width: 190px;
+        height: 280px;
+        margin: auto;
+    }
+
+    .book-display{
+        background-color: #d9cfc1;
+        color: rgb(209, 209, 209);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .book-img>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .book-info{
+        visibility: hidden;
+
+        background-color: #373737c9;
+        position: absolute;
+        bottom: 0px;
+        padding: 6px;
+        border-radius: 3px;
+        width: 100%;
+    }
+
+    .book-delete{
+        visibility: hidden;
+
+        background-color: #37373750;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .add-buttom{
+        background-color: #f2af29;
+        color: #373737;
+        position: absolute;
+        display: flex;
+        right: 20px;
+        bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        width: 30px;
+        height: 30px;
+    }
+
+/* Forms */
+.form-newBook{
+    background-color: #d9cfc1;
+    padding: 10px;
+}
+
+.form-options{
+    display: flex;
+    flex-flow: column;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
