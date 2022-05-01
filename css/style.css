@@ -63,7 +63,7 @@
     }
 
     .book-info{
-        visibility: hidden;
+        visibility: visible;
 
         background-color: #373737c9;
         position: absolute;
@@ -74,7 +74,7 @@
     }
 
     .book-delete{
-        visibility: hidden;
+        visibility: visible;
 
         background-color: #37373750;
         display: flex;
